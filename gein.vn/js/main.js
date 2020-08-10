@@ -67,6 +67,18 @@ $(document).ready(function() {
             var overlay = document.querySelector('.header__overlay');
             var overlay_button = document.querySelector('header__overlay-button');
             var menu = document.querySelector('.header__mobile');
+            var btndown = document.querySelectorAll('.active-one');
+            var btn = document.querySelectorAll('.tag-action');
+            btndown.forEach(function(items) {
+                items.addEventListener('click', function() {
+                    $(this).siblings().toggleClass('disb');
+                });
+            });
+            btn.forEach(function(items) {
+                items.addEventListener('click', function() {
+                    $(this).siblings().toggleClass('disblock');
+                });
+            });
             button.addEventListener('click', function() {
                 menu.classList.add('show');
                 menu.classList.remove('off');
@@ -78,7 +90,8 @@ $(document).ready(function() {
             overlay_button.addEventListener('click', function() {
                 menu.classList.add('off');
                 menu.classList.remove('show');
-            })
+            });
+
         }
     }
     menuResponsive.init()

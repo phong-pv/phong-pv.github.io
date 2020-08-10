@@ -10,6 +10,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <!-- Link GG Font-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <!--Link Fancybox-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <!-- Link Carousel-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -56,11 +58,15 @@
                         </div>
                         <div class="col-xl-8 col-12 p-10 d-flex align-items-center justify-content-between">
                             <ul class="header__main-menu d-flex align-items-center justify-content-center">
-                                <li class="header__main-menu-item"><a href="../index.html">Trang chủ</a></li>
-                                <li class="header__main-menu-item"><a href="#">Giới thiệu&nbsp;<i class="fa fa-angle-down"></i></a></li>
-                                <li class="header__main-menu-item"><a href="../product.html">Sản Phẩm&nbsp;<i class="fa fa-angle-down"></i></a></li>
+                                <li class="header__main-menu-item"><a href="./index.html">Trang chủ</a></li>
+                                <li class="header__main-menu-item"><a href="#">Giới thiệu&nbsp;<i class="fa fa-angle-down"></i>
+                      <ul class="submenu">
+                        <li class="submenu-item">Về Gein</li>
+                        <li class="submenu-item">Câu chuyện thành công</li>
+                      </ul></a></li>
+                                <li class="header__main-menu-item"><a href="./product.html">Sản Phẩm&nbsp;<i class="fa fa-angle-down"></i></a></li>
                                 <li class="header__main-menu-item"><a href="#">Dịch vụ&nbsp;<i class="fa fa-angle-down"></i></a></li>
-                                <li class="header__main-menu-item"><a href="../news.html">Tin Tức&nbsp;<i class="fa fa-angle-down"> </i></a></li>
+                                <li class="header__main-menu-item"><a href="./news.html">Tin Tức&nbsp;<i class="fa fa-angle-down"> </i></a></li>
                                 <li class="header__main-menu-item"><a href="#">Liên Hệ&nbsp;</a></li>
                             </ul>
                             <div class="header__main-search">
@@ -77,12 +83,32 @@
                     <div class="header__mobile-left">
                         <div class="header__mobile-title">MENU</div>
                         <ul class="header__mobile-list">
-                            <li class="header__mobile-item pt-3 pb-3"><a href="../index.html">Trang chủ</a></li>
-                            <li class="header__mobile-item"><a href="">Giới thiệu</a><i class="fa fa-angle-down"></i></li>
-                            <li class="header__mobile-item"><a href="../product.html">Sản Phẩm</a><i class="fa fa-angle-down"></i></li>
-                            <li class="header__mobile-item"><a href="">Dịch vụ</a><i class="fa fa-angle-down"></i></li>
-                            <li class="header__mobile-item"><a href="../news.html">Tin Tức</a><i class="fa fa-angle-down"></i></li>
-                            <li class="header__mobile-item pt-3 pb-3"><a href="">Liên Hệ</a></li>
+                            <li class="header__mobile-item"><a href="./index.html">Trang chủ</a></li>
+                            <li class="header__mobile-item"><a href="">Giới thiệu</a><i class="fa fa-angle-down active-one"></i>
+                                <ul class="mobile-submenu">
+                                    <li class="mobile-submenu-item"> <a href="">Về Gein</a></li>
+                                    <li class="mobile-submenu-item"> <a href="">Câu chuyện thành công </a></li>
+                                </ul>
+                            </li>
+                            <li class="header__mobile-item"><a href="./product.html">Sản Phẩm</a><i class="fa fa-angle-down active-one"></i>
+                                <ul class="mobile-submenu">
+                                    <li class="mobile-submenu-item"> <a href="./product.html">Map For Success</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__mobile-item"><a href="">Dịch vụ</a><i class="fa fa-angle-down active-one"></i>
+                                <ul class="mobile-submenu">
+                                    <li class="mobile-submenu-item"> <a href="">Bán Lẻ</a></li>
+                                    <li class="mobile-submenu-item"> <a href="">Đại lý</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__mobile-item"><a href="./news.html">Tin Tức</a><i class="fa fa-angle-down active-one"></i>
+                                <ul class="mobile-submenu">
+                                    <li class="mobile-submenu-item"> <a href="">Hoạt động chung</a></li>
+                                    <li class="mobile-submenu-item"> <a href="">Sự kiện sắp diễn ra</a></li>
+                                    <li class="mobile-submenu-item"> <a href="">Bài học cuộc sống</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__mobile-item"><a href="">Liên Hệ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -115,8 +141,9 @@
                         <div class="about__left">
                             <div class="about__left-title">CÔNG TY CỔ PHẦN SÁNG KIẾN GIÁO DỤC TOÀN CẦU - GEIN</div>
                             <p class="about__left-content"></p>Thần Số Học là việc nghiên cứu ý nghĩa, biểu tượng của các con số và những ảnh hưởng của nó đối với đời sống con người. Là sự khám phá tri thức, tính kết nối giữa những con số với con người, sự kiện trên thế giới và cuộc
-                            sống đời thường nói chung.Không phải tự nhiên mà Thần Số Học lại trở thành một bộ môn huyền học được nhiều bạn quan tâm ngang ngưởng với các bộ môn khác. Chúng ta ai cũng thích khám phá những điều kỳ lạ diễn ra xung quanh chúng
-                            ta, nhưng tại sao Thần Số Học lại thu hút đến như vậy? Đó là vì cuộc sống của chúng ta luôn bao hàm những con số, kể cả ngày tháng năm sinh của chúng ta cũng nằm trên hệ thống luận giải
+                            sống đời thường nói chung.
+                            <p class="mt-4">Không phải tự nhiên mà Thần Số Học lại trở thành một bộ môn huyền học được nhiều bạn quan tâm ngang ngưởng với các bộ môn khác. Chúng ta ai cũng thích khám phá những điều kỳ lạ diễn ra xung quanh chúng ta, nhưng tại sao Thần
+                                Số Học lại thu hút đến như vậy? Đó là vì cuộc sống của chúng ta luôn bao hàm những con số, kể cả ngày tháng năm sinh của chúng ta cũng nằm trên hệ thống luận giải</p>
                             <div class="about__left-button d-flex">
                                 <div class="about__left-button-one"><i class="fa fa-info-circle"></i>Xem chi tiết</div>
                                 <div class="about__left-button-two"><i class="fa fa-download"></i>Download Catalogue</div>
@@ -125,7 +152,9 @@
                     </div>
                     <div class="col-md-6 col-12">
                         <div class="about__right">
-                            <div class="about__right-video"><img src="./images/thum-video.jpg" alt=""><i class="fa fa-play-circle fa-3x"></i></div>
+                            <div class="about__right-video">
+                                <a href="https://www.youtube.com/watch?v=4GIKRcnto-A" data-fancybox><img src="../../images/thum-video.jpg" alt=""><i class="fa fa-play-circle fa-3x"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,7 +167,7 @@
                 <div class="product__title">SẢN PHẨM NỔI BẬT</div>
                 <div class="product__logo d-flex align-items-center justify-content-center">
                     <div class="product__logo-under"></div>
-                    <div class="product__logo-img"><img src="./images/product1.jpg" alt=""></div>
+                    <div class="product__logo-img"><img src="./images/product1.png" alt=""></div>
                     <div class="product__logo-under"></div>
                 </div>
                 <div class="product__slogan">
@@ -148,65 +177,56 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="product__item">
-                            <a href=""><img src="./images/product2.jpg" alt="">
-                                <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
-                            </a>
+                            <a href="#"><img src="./images/product2.jpg" alt=""></a>
+                            <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="product__item">
-                            <a href=""><img src="./images/product3.jpg" alt="">
-                                <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
-                            </a>
+                            <a href="#"><img src="./images/product3.jpg" alt=""></a>
+                            <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="product__item">
-                            <a href=""><img src="./images/product4.jpg" alt="">
-                                <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
-                            </a>
+                            <a href="#"><img src="./images/product4.jpg" alt=""></a>
+                            <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="product__item">
-                            <a href=""><img src="./images/product5.jpg" alt="">
-                                <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
-                            </a>
+                            <a href="#"><img src="./images/product5.jpg" alt=""></a>
+                            <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="product__item">
-                            <a href=""><img src="./images/product6.jpg" alt="">
-                                <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
-                            </a>
+                            <a href="#"><img src="./images/product6.jpg" alt=""></a>
+                            <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="product__item">
-                            <a href=""><img src="./images/product7.jpg" alt="">
-                                <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
-                            </a>
+                            <a href="#"><img src="./images/product7.jpg" alt=""></a>
+                            <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="product__item">
-                            <a href=""><img src="./images/product8.jpg" alt="">
-                                <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
-                            </a>
+                            <a href="#"><img src="./images/product8.jpg" alt=""></a>
+                            <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="product__item">
-                            <a href=""><img src="./images/product9.jpg" alt="">
-                                <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
-                            </a>
+                            <a href="#"><img src="./images/product9.jpg" alt=""></a>
+                            <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="product__item">
-                            <a href=""><img src="./images/product10.jpg" alt="">
-                                <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
-                            </a>
+                            <a href="#"><img src="./images/product10.jpg" alt=""></a>
+                            <h4>Thần Số Học - Khám Phá Tri Thức Đằng Sau Những Con Số</h4>
                         </div>
                     </div>
                 </div>
@@ -219,7 +239,7 @@
                 <div class="action__title text-center">HOẠT ĐỘNG NỔI BẬT</div>
                 <div class="action__logo d-flex align-items-center justify-content-center">
                     <div class="action__logo-under"></div>
-                    <div class="action__logo-img"><img src="./images/product1.jpg" alt=""></div>
+                    <div class="action__logo-img"><img src="./images/product1.png" alt=""></div>
                     <div class="action__logo-under"></div>
                 </div>
                 <ul class="action__list">
@@ -277,7 +297,7 @@
                     <div class="story__title">CÂU CHUYỆN THÀNH CÔNG</div>
                     <div class="story__logo d-flex align-items-center justify-content-center">
                         <div class="story__logo-under"></div>
-                        <div class="story__logo-img"><img src="./images/product1.jpg" alt=""></div>
+                        <div class="story__logo-img"><img src="./images/product1.png" alt=""></div>
                         <div class="story__logo-under"></div>
                     </div>
                     <div class="story__slogan">
@@ -369,7 +389,7 @@
                 <div class="signup__title">Đăng kí trải nghiệm</div>
                 <div class="signup__logo d-flex align-items-center justify-content-center">
                     <div class="signup__logo-under"></div>
-                    <div class="signup__logo-img"><img src="./images/product1.jpg" alt=""></div>
+                    <div class="signup__logo-img"><img src="./images/product1.png" alt=""></div>
                     <div class="signup__logo-under"></div>
                 </div>
                 <div class="signup__slogan">
@@ -466,6 +486,9 @@
     </div>
     <!--Link Jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Link Carousel-->
+    <!--link Fancy Box-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <!--Link Carousel-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!--Link Script-->
